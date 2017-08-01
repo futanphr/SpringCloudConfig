@@ -32,5 +32,5 @@ spring:
 eureka:
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
-words: 书,画,电影
+words: 书1,画1,电影1
     
