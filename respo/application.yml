@@ -27,5 +27,10 @@ words: reasonable,leaky,suspicious,ordinary,unlikely
 ---
 spring:
   profiles: noun
-words: boat,book,vote,seat,backpack,partition,groundhog
+#words: boat,book,vote,seat,backpack,partition,groundhog
+
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+words: 书,画,电影
     
